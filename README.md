@@ -136,10 +136,10 @@ Interface moderna e amigável para uso da plataforma:
 ## 📦 Estrutura Inicial dos Diretórios
 
 root
-│
-├─ backend/ # NestJS API
-├─ frontend/ # Next.js UI
-└─ worker/ # Python ML/IA service
+
+  backend/ # NestJS API
+  frontend/ # Next.js UI
+  worker/ # Python ML/IA service
 
 
 ---
