@@ -4,8 +4,8 @@ Uma plataforma completa de análise de dados que permite upload, visualização,
 
 Este projeto foi criado com:
 
-- **Backend:** NestJS (`nest new backend`)
-- **Frontend:** Next.js (`create-next-app@latest frontend`)
+- **Backend:** NestJS
+- **Frontend:** Next.js 
 - **Data/ML Worker:** Serviço Python (ETL, estatísticas, modelos de ML e IA)
 - **Banco:** MongoDB
 
