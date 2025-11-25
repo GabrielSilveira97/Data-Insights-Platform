@@ -6,12 +6,14 @@ import NavbarComponent from "@/components/sections/Navbar";
 
 export const metadata: Metadata = {
   title: "Data Insights Platform",
-  description: "Data analytics system with automated insights, interactive visualizations, data cleansing, and intelligent report generation.",
+  description:
+    "Data analytics system with automated insights, interactive visualizations, data cleansing, and intelligent report generation.",
   openGraph: {
     title: "Data Insights Platform",
-    description: "Data analytics system with automated insights, interactive visualizations, data cleansing, and intelligent report generation.",
+    description:
+      "Data analytics system with automated insights, interactive visualizations, data cleansing, and intelligent report generation.",
     siteName: "Data Insights Platform",
-  }
+  },
 };
 
 const RootLayout = ({
@@ -23,7 +25,12 @@ const RootLayout = ({
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
         <QueryProvider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
             <NavbarComponent />
             {children}
           </ThemeProvider>
@@ -31,6 +38,6 @@ const RootLayout = ({
       </body>
     </html>
   );
-}
+};
 
 export default RootLayout;
