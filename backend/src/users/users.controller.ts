@@ -3,17 +3,15 @@ import { UsersService } from './users.service';
 
 @Controller('users')
 export class UsersController {
+  constructor(private readonly usersService: UsersService) {}
 
-    constructor(private readonly usersService: UsersService){}
+  @Get()
+  getUsers() {
+    return this.usersService.getAllUsers();
+  }
 
-    @Get()
-    getUsers(){
-        return this.usersService.getAllUsers();
-    }
-
-    @Get(':id')
-    getUserById(id: string){
-        return this.usersService.getUserById(id);
-    }
-
+  @Get(':id')
+  getUserById(id: string) {
+    return this.usersService.getUserById(id);
+  }
 }

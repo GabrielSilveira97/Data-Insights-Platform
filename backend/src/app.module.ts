@@ -7,12 +7,11 @@ import { UsersController } from './users/users.controller';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(
-    { isGlobal: true }
-  ),
-  MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb://localhost/nest'),
-  UsersModule
-],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    MongooseModule.forRoot(process.env.MONGO_URI || 'mongodb://localhost/nest'),
+    UsersModule,
+  ],
   controllers: [AppController, UsersController],
   providers: [AppService],
 })
